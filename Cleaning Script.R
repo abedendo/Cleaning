@@ -6,6 +6,19 @@
 getwd()
 
 
+###SINC WITH GITHUB
+library(usethis)
+
+###CREATE OR GET YOUR TOKEN IN GITHUB - FOLLOW THE STEPS
+#ACCESS AND GEN OR CREATE TOKEN
+#1 https://github.com/settings/tokens
+#2 Open and paste the token in the .Renviron
+edit_r_environ()
+#3 Restart R
+Ctrl+ALT+B
+#4
+use_github(protocol = 'htpps', auth_token = Sys.getenv("GITHUB_PAT"))
+
 
 ###Import
 setwd("D:/Google Drive/Post Doc/Analysis")
